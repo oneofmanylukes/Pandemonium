@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pandemonium"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Pandemonium" Height="560" Width="280" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid x:Name="G_OptionSelect">
+            <CheckBox x:Name="CB_SwapMouse" Content="Swap mouse buttons" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="254"/>
+            <CheckBox x:Name="CB_ToggleDesktopIcons" Content="Toggle desktop icons" Margin="10,31,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="254"/>
+        </Grid>
+        <Button x:Name="B_Chaos" Content="Chaos" HorizontalAlignment="Left" Margin="10,481,0,0" VerticalAlignment="Top" Width="124" Height="35" Click="B_Chaos_Click"/>
+        <Button x:Name="B_Undo" Content="Undo" HorizontalAlignment="Left" Margin="140,481,0,0" VerticalAlignment="Top" Width="124" Height="35"/>
     </Grid>
 </Window>
